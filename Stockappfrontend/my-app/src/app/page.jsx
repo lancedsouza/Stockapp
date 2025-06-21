@@ -1,7 +1,8 @@
 import TopNavbar from '../components/TopNavbar';
 import BottomNavbar from '../components/BottomNavbar';
 import BannerCarousel from '../components/BannerCarousel';
-import MarketCard from '../components/MarketCard'; // ← NEW
+import MarketCard from '../components/MarketCard';
+import LiveMarketChart from '../components/LiveMarketChart'; // ← new
 
 export default function HomePage() {
   return (
@@ -17,6 +18,9 @@ export default function HomePage() {
           <MarketCard title="SENSEX" value="77,209" change={-0.12} />
           <MarketCard title="BANK NIFTY" value="50,789" change={1.35} />
         </div>
+
+        {/* Live Chart */}
+        <LiveMarketChart />
       </div>
 
       <BottomNavbar />
